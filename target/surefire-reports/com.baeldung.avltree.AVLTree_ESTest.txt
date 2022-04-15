@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.baeldung.avltree.AVLTree_ESTest
+-------------------------------------------------------------------------------
+Tests run: 34, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.124 s <<< FAILURE! - in com.baeldung.avltree.AVLTree_ESTest
+test14(com.baeldung.avltree.AVLTree_ESTest)  Time elapsed: 0.014 s  <<< ERROR!
+java.lang.StackOverflowError
+
+test06(com.baeldung.avltree.AVLTree_ESTest)  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.StackOverflowError
+

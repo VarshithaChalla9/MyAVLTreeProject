@@ -1,0 +1,15 @@
+# Created at 2022-04-14T17:29:08.138
+WARNING: An illegal reflective access operation has occurred
+
+# Created at 2022-04-14T17:29:08.138
+WARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/C:/Users/admin/.m2/repository/org/evosuite/evosuite-standalone-runtime/1.0.6/evosuite-standalone-runtime-1.0.6.jar) to field java.awt.GraphicsEnvironment.headless
+
+# Created at 2022-04-14T17:29:08.140
+WARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport
+
+# Created at 2022-04-14T17:29:08.140
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created at 2022-04-14T17:29:08.147
+WARNING: All illegal access operations will be denied in a future release
+
