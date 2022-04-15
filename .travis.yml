@@ -1,9 +1,6 @@
 language: java
-build: 
-  stage: build
-  script: 
-    - mvn compile
-test:
-  stage: test
-  script:
-    -mvn clean test
+jdk: oraclejdk10
+install: true
+script: 
+  - ./mvnw clean install
+  - mvn test
