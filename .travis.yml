@@ -1,5 +1,6 @@
 language: java
-
+dist: trusty
+jdk: oraclejdk8
 install:
     - sudo apt-get update
     - sudo apt-get install build-essential
@@ -7,3 +8,6 @@ install:
 
 script:
     - mvn compile
+    - mvn evosuite:help
+    - mvn evosuite:generate
+    - mvn test
