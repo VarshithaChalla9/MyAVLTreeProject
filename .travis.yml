@@ -4,14 +4,12 @@ jdk: oraclejdk8
 env:
   global:
     - CC_TEST_REPORTER_ID=7b6cabc60d29dbba80198d41999e8b08c3f9bd2b509c116631ab79b82fe46657
-#### Rest of code omitted for clarity ####
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
-#### Rest of code omitted for clarity ####
 after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+  - ./cc-test-reporter format-coverage --exit-code $TRAVIS_TEST_RESULT
 install:
     - sudo apt-get install build-essential
     - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
@@ -21,3 +19,4 @@ script:
     - mvn evosuite:help
     - mvn evosuite:generate
     - mvn test
+    - mvn evosuite:info
