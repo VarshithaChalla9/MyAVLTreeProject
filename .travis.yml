@@ -10,7 +10,7 @@ before_script:
   - ./cc-test-reporter before-build
 
 after_script:
-  - ./cc-test-reporter after-build -t lcov --debug --exit-code $TRAVIS_TEST_RESULT
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
 install:
     - sudo apt-get install build-essential
@@ -21,4 +21,3 @@ script:
     - mvn evosuite:help
     - mvn evosuite:generate
     - mvn test
-    - mvn evosuite:info
