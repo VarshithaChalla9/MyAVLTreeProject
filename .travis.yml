@@ -18,6 +18,7 @@ install:
     - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 
 script:
+    - coverage run -m unittest discover
     - mvn compile
     - mvn evosuite:help
     - mvn evosuite:generate
