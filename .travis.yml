@@ -11,7 +11,7 @@ before_script:
 
 after_script:
   - ./cc-test-reporter after-build -t lcov --debug --exit-code $TRAVIS_TEST_RESULT
- after_success:
+after_success:
   - bash <(curl -s https://codecov.io.bash)
 install:
     - sudo apt-get install build-essential
