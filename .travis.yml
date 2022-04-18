@@ -22,5 +22,4 @@ script:
     - mvn evosuite:generate
     - mvn evosuite:export
     - mvn cobertura:cobertura
-    - mvn evosuite:info
     - mvn test
